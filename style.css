@@ -5,13 +5,12 @@
   box-sizing: border-box;
 }
 
-/* Tipografia e cores */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #000000; /* preto puro */
-  color: #ffffff;            /* branco puro */
-  line-height: 1.6;
+  font-family: sans-serif;
+  color: #d3d0d0;
+  overflow-x: hidden;
 }
+
 
 h1, h2, h3 {
   font-family: 'Segoe UI', sans-serif;
@@ -20,14 +19,10 @@ h1, h2, h3 {
 
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #000000;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 10px 20px;
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
@@ -63,7 +58,7 @@ nav a:hover {
 }
 .hero p {
   margin: 20px 0;
-  color: #dddddd;
+  color: #ffffff;
   font-size: 1.1rem;
 }
 
@@ -171,12 +166,15 @@ footer {
 
 .video-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   z-index: -1;
+  transform: translate(-50%, -50%);
   object-fit: cover;
-  filter: brightness(1);
+  opacity: 5; /* ou ajuste como preferir */
 }
 
